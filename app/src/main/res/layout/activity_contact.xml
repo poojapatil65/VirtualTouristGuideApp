@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Contact">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/toolb"
+        android:visibility="visible"
+        app:title="Suggestion/Grievience" />
+
+
+    <TextView
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="100dp"
+        android:layout_marginRight="22dp"
+        android:ems="14"
+        android:inputType="textPersonName"
+        android:text="poojapatil6597@gmail.com" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@+id/editText"
+        android:layout_alignLeft="@+id/editText"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/edittext_background"
+        android:ems="10"
+        android:inputType="textPersonName">
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_below="@+id/editText2"
+        android:layout_alignLeft="@+id/editText2"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/edittext_background"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:maxLines="50"
+        tools:layout_editor_absoluteX="13dp"
+        tools:layout_editor_absoluteY="336dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/editText"
+        android:layout_alignBottom="@id/editText"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="To:"
+        android:textColor="@android:color/black"
+        tools:layout_editor_absoluteX="272dp"
+        tools:layout_editor_absoluteY="141dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/editText2"
+        android:layout_alignBottom="@+id/editText2"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="Subject:"
+        android:textColor="@android:color/black"
+        tools:layout_editor_absoluteX="290dp"
+        tools:layout_editor_absoluteY="358dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/editText3"
+        android:layout_alignBottom="@+id/editText3"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="Messasge:"
+        android:textColor="@android:color/black" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText3"
+        android:layout_alignLeft="@+id/editText3"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginRight="22dp"
+        android:background="@drawable/button_background"
+        android:text="Submit" />
+</RelativeLayout>

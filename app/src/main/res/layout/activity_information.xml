@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Information"
+    >
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        app:title="Information"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/toolb"
+        android:visibility="visible" />
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginTop="4dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:textColor="@android:color/black"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textLatLong"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@+id/textname"
+                android:textColor="@android:color/black"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/mapB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginStart="40dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/textLatLong"
+                android:background="@drawable/button_background"
+                android:drawableLeft="@drawable/location"
+                android:text="Map" />
+
+            <Button
+                android:id="@+id/mapC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginStart="40dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/textLatLong"
+                android:layout_toRightOf="@+id/mapB"
+                android:background="@drawable/button_background"
+                android:drawableLeft="@drawable/location"
+                android:onClick="nearbyhotel"
+                android:text="Nearby Hotel Plans" />
+
+            <Button
+                android:id="@+id/mapD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginStart="40dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/mapB"
+                android:background="@drawable/button_background"
+                android:drawableLeft="@drawable/location"
+                android:text="Book Cab"
+                android:onClick="bookcab"/>
+
+            <Button
+                android:id="@+id/mapE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginStart="40dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/mapB"
+                android:layout_toRightOf="@+id/mapD"
+                android:background="@drawable/button_background"
+                android:drawableLeft="@drawable/location"
+                android:text="Nearby Hospitals"
+                android:onClick="nearhospitals"/>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

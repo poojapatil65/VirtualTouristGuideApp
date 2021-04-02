@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp">
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="2dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/image2"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"/>
+
+
+            <TextView
+                android:id="@+id/beachName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_below="@+id/image2"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+
+                />
+            <TextView
+                android:id="@+id/country"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_below="@id/beachName"
+                android:textSize="15sp"
+                android:textColor="@android:color/black"
+                />
+            <TextView
+                android:id="@+id/state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:textSize="15sp"
+                android:layout_below="@+id/country"
+                android:textColor="@android:color/black"
+               />
+
+            <TextView
+                android:id="@+id/xtrip_duration1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:textSize="15sp"
+                android:text="Ideal Trip Duration: "
+                android:layout_below="@+id/state"
+                android:textColor="@android:color/black"
+                />
+            <TextView
+                android:id="@+id/xtrip_duration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:textSize="15sp"
+                android:layout_below="@+id/xtrip_duration1"
+                android:textColor="@android:color/black"
+
+               />
+
+            <TextView
+                android:id="@+id/xtime_to_visit1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:textSize="15sp"
+                android:text="Best Time to Visit: "
+                android:layout_below="@+id/xtrip_duration"
+                android:textColor="@android:color/black"
+                />
+
+            <TextView
+                android:id="@+id/xtime_to_visit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:textSize="15sp"
+                android:layout_below="@+id/xtime_to_visit1"
+                android:textColor="@android:color/black"
+              />
+
+
+            <TextView
+                android:id="@+id/info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:textSize="20sp"
+                android:layout_below="@+id/xtime_to_visit"
+                android:textColor="@android:color/black"
+
+                />
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

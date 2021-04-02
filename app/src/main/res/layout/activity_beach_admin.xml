@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".BeachAdmin">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/toolb"
+        android:visibility="visible"
+        app:title="Beaches" />
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <EditText
+                android:id="@+id/beachName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Beach Name"
+                android:layout_marginTop="50dp"
+                android:inputType="textCapWords"/>
+
+            <EditText
+                android:id="@+id/country"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Country"
+                android:inputType="textCapWords"
+                android:layout_marginTop="15dp"
+                />
+
+            <EditText
+                android:id="@+id/state"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Location"
+
+                android:inputType="textCapSentences"
+                android:layout_marginTop="15dp" />
+            <EditText
+                android:id="@+id/trip_duration"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Ideal Trip Duration"
+
+                android:layout_marginTop="15dp"
+                android:inputType="textCapWords"/>
+            <TextView
+                android:id="@+id/time_to_visit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:text="Best Time To Visit: "
+                android:layout_marginTop="15dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <Spinner
+                    android:id="@+id/ms1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/months"
+                    >
+
+                </Spinner>
+
+                <TextView
+                    android:id="@+id/to2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:text="     To       "
+                    />
+                <Spinner
+                    android:id="@+id/ms2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/months"/>
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/beach_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Information"
+                android:layout_marginTop="15dp"
+                android:inputType="textCapSentences"/>
+
+
+            <Button
+                android:id="@+id/btnbrowse1"
+                android:text="Browse"
+                android:background="@drawable/button_background"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"/>
+
+
+            <ImageView
+                android:id="@+id/imgview2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center" />
+
+            <Button
+                android:id="@+id/save"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Save"
+                android:background="@drawable/button_background"
+                android:layout_marginTop="40dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
+

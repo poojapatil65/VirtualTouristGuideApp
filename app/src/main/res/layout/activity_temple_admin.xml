@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".TempleAdmin">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/toolb"
+        android:visibility="visible"
+        app:title="Temples" />
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <EditText
+                android:id="@+id/templeName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Temple Name"
+                android:layout_marginTop="50dp"
+                android:inputType="textCapWords"/>
+
+
+            <EditText
+                android:id="@+id/country"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Country,State"
+                android:layout_marginTop="15dp"
+                android:inputType="textCapWords"/>
+
+            <EditText
+                android:id="@+id/location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Location"
+                android:layout_marginTop="15dp"
+                />
+            <TextView
+                android:id="@+id/visit_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:text="Visiting Time: "
+                android:layout_marginTop="15dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <Spinner
+                    android:id="@+id/thr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/hour"
+                    android:prompt="@string/hr"/>
+                <Spinner
+                    android:id="@+id/tmi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/minut"
+                    />
+                <Spinner
+                    android:id="@+id/tse"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/second"
+                    />
+                <Spinner
+                    android:id="@+id/tti"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/ampm"
+                    />
+
+            </LinearLayout>
+            <EditText
+                android:id="@+id/entry"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Entry Fee"
+
+                android:layout_marginTop="15dp" />
+            <EditText
+                android:id="@+id/temple_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Information"
+                android:layout_marginTop="15dp"/>
+
+
+            <Button
+                android:id="@+id/btnbrowse1"
+                android:text="Browse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_background"
+                android:layout_marginTop="15dp"/>
+
+
+            <ImageView
+                android:id="@+id/imgview2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center" />
+
+            <Button
+                android:id="@+id/save"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Save"
+                android:background="@drawable/button_background"
+                android:layout_marginTop="40dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
+

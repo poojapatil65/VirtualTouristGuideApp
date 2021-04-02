@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    android:padding="5dp"
+    android:filterTouchesWhenObscured="false"
+    tools:context=".Main4Activity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="350dp"
+        android:layout_height="465dp"
+        android:padding="5dp"
+        android:text="TRAVEL TOGETHER IS BETTER"
+        android:textColor="#011214"
+        android:textColorHighlight="#F32121"
+        android:textSize="70sp"
+        android:textStyle="italic"
+        app:fontFamily="serif-monospace"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.737"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.624" />
+</androidx.constraintlayout.widget.ConstraintLayout>

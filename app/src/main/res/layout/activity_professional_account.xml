@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ProfessionalAccount">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/toolb"
+        android:visibility="visible"
+        app:title="Which Best Describes You?" />
+
+
+
+    <RadioGroup
+        android:id="@+id/G1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RadioButton
+            android:id="@+id/hotel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginBottom="50dp"
+            android:text="Hotel"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar"
+            app:layout_constraintVertical_bias="0.168" />
+
+        <RadioButton
+            android:id="@+id/hospital"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="5dp"
+            android:text="Hospital"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/hotel" />
+
+        <RadioButton
+            android:id="@+id/vehicle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="50dp"
+            android:text="Vehicle"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/hospital"
+            app:layout_constraintVertical_bias="0.168" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Next"
+            android:background="@drawable/button_background"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"/>
+
+    </RadioGroup>
+
+
+
+</LinearLayout>

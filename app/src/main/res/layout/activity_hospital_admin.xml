@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".HospitalAdmin">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/toolb"
+        android:visibility="visible"
+        app:title="Hospital" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/hospital_name"
+                android:hint="Hospital Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textCapWords"
+                android:layout_marginTop="50dp" />
+
+            <EditText
+                android:id="@+id/country"
+                android:hint="Country,State"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:inputType="textCapWords"/>
+
+            <EditText
+                android:id="@+id/location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Location"
+
+                android:layout_marginTop="15dp"/>
+            <EditText
+                android:id="@+id/degree"
+                android:hint="Degree"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="15dp" />
+            <EditText
+                android:id="@+id/contact_no"
+                android:hint="Contact No."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                android:layout_marginTop="15dp" />
+            <TextView
+                android:id="@+id/time_duration"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Time: "
+                android:textColor="@android:color/black"
+                android:layout_marginTop="15dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <Spinner
+                    android:id="@+id/hr2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/hour"
+                    android:prompt="@string/hr"/>
+                <Spinner
+                    android:id="@+id/mi2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/minut"
+                    />
+
+                <Spinner
+                    android:id="@+id/ti2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/ampm"
+                    />
+
+                <TextView
+                    android:id="@+id/to"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="To"
+                    android:textColor="@android:color/black"
+                    android:layout_marginLeft="40dp"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                >
+                <Spinner
+                    android:id="@+id/hr3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/hour"
+                    android:prompt="@string/hr"/>
+                <Spinner
+                    android:id="@+id/mi3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/minut"
+                    />
+
+                <Spinner
+                    android:id="@+id/ti3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/ampm"
+                    />
+
+
+
+            </LinearLayout>
+            <Button
+                android:id="@+id/btnbrowse1"
+                android:text="Browse"
+                android:background="@drawable/button_background"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"/>
+
+
+            <ImageView
+                android:id="@+id/imgview2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center" />
+
+            <Button
+                android:id="@+id/save"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Save"
+                android:background="@drawable/button_background"
+                android:layout_marginTop="40dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

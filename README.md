@@ -3,6 +3,7 @@ This is a mobile application which renders information about monument or landmar
 taking their live pictures of places and provide all information related to places like
 Hospitals , Hotel and Temple and also seek for help in an emergency.
 
+https://user-images.githubusercontent.com/62329643/113416383-d7f34800-93de-11eb-86c5-eb33a732881d.mp4
 
 Features:
 

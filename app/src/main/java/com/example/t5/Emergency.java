@@ -65,7 +65,7 @@ public class Emergency extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent callIntent = new Intent(Intent.ACTION_CALL);
-                callIntent.setData(Uri.parse("tel:9637125650"));
+                callIntent.setData(Uri.parse("tel:0000000000"));
                 if (ContextCompat.checkSelfPermission(getApplicationContext(), Manifest.permission.ACCESS_FINE_LOCATION)
                         != PackageManager.PERMISSION_GRANTED) {
                     ActivityCompat.requestPermissions(Emergency.this, new String[]{Manifest.permission.ACCESS_FINE_LOCATION},
@@ -90,7 +90,7 @@ public class Emergency extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent callIntent = new Intent(Intent.ACTION_CALL);
-                callIntent.setData(Uri.parse("tel:8788005026"));
+                callIntent.setData(Uri.parse("tel:0000000000"));
 
                 if (ContextCompat.checkSelfPermission(getApplicationContext(), Manifest.permission.ACCESS_FINE_LOCATION)
                         != PackageManager.PERMISSION_GRANTED) {
@@ -113,7 +113,7 @@ public class Emergency extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent callIntent = new Intent(Intent.ACTION_CALL);
-                callIntent.setData(Uri.parse("tel:7350210746"));
+                callIntent.setData(Uri.parse("tel:0000000000"));
 
                 if (ContextCompat.checkSelfPermission(getApplicationContext(), Manifest.permission.ACCESS_FINE_LOCATION)
                         != PackageManager.PERMISSION_GRANTED) {
@@ -202,7 +202,7 @@ public class Emergency extends AppCompatActivity {
 
     private void send_message() {
         String msg = "Address: " +fulladress;
-        String smsNumber = "9637125650";
+        String smsNumber = "0000000000";
 
         int permissionCheck =
                 ContextCompat.checkSelfPermission(Emergency.this, Manifest.permission.SEND_SMS);
